@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>File uploader</title>
+</head>
+<body>
+    <div id='header'>
+            <h1>Benny Boy's Excel Sourcery</h1>
+    </div>
+    <br>
+    <div class="container">
+            <h3>Files for download</h3>
+            <ul>
+                <li><a href="/uploads/RENT%20-%20Single%20Rental%20Workpaper.xlsb">Single rental workpaper</a> <i class="far fa-file-excel"></i></li>
+                <li><a href="/uploads/mortgage-loan-calculator.xlsx">Mortgage Loan Calculator</a> <i class="far fa-file-excel"></i></li>
+                <li><a href="/uploads/automatic cashbook.xlsx">Automatic Cashbook</a> <i class="far fa-file-excel"></i></li>
+                <li><a href="/uploads/SORT%20-%20Bank%20CSV%20Download%20into%20Transactions.xlsx">Sort bank download into transactions</a> <i class="far fa-file-excel"></i></li>
+            </ul>
+            
+    </div>
+    
+    <hr>
+
+    <!-- upload form -->
+    <div class="container">
+            <h3>Upload files here</h3>
+            <div id='thanks'></div>
+            <form id="uploader" action="/upload" enctype="multipart/form-data" method="post">
+                <input type="text" name="title"><br>
+                <input type="file" name="upload" multiple="multiple"><br>
+                <input type="submit" name="booger" value="Upload">
+                </form>
+    </div>
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

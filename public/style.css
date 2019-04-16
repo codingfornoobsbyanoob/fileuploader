@@ -1,0 +1,23 @@
+body {
+    margin: 0px
+}
+
+h1 {
+    text-align: center
+}
+
+#header { 
+    
+    border-bottom: solid 2px grey;
+    background-color: #aaaa;
+    padding:20px
+}
+
+.container {
+    padding: 10px
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none
+}
