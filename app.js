@@ -21,9 +21,9 @@ app.use(function(req, res, next) {
         form.on('fileBegin', function (name, file){
             file.path = __dirname + '/public/uploads/' + file.name;
         });
-        console.log(form)
+        // console.log(form)
         res.redirect('/')
     })
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}! :)`))
+app.listen(port, () => console.log(`File upload app listening on port ${port}! :)`))
